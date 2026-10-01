@@ -1,57 +1,141 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <title>Privacy Policy and Terms for TheAutomationLayerAI Upload Service</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy and Terms | The Automation Layer</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for The Automation Layer upload service, which uses YouTube API Services.">
   <style>
-    body { font-family: Arial, sans-serif; line-height:1.6; max-width:900px; margin:40px auto; padding:0 20px; color:#111; }
-    h1,h2 { color:#0b5; }
-    pre { background:#f6f6f6; padding:12px; border-left:4px solid #ddd; overflow:auto; }
-    a { color:#0366d6; }
+    :root {
+      --bg: #ffffff; --fg: #16171a; --muted: #5b5f66; --rule: #e3e4e8;
+      --accent: #b8741f; --link: #0b5cad; --code-bg: #f3f4f6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0a0a0a; --fg: #f5f3ee; --muted: #a3a39c; --rule: #2a2a2a;
+        --accent: #f0a860; --link: #7db4ff; --code-bg: #1a1a1a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    header.site { border-bottom: 1px solid var(--rule); padding-bottom: 16px; margin-bottom: 8px; }
+    header.site p { margin: 0; color: var(--muted); }
+    nav a { margin-right: 16px; }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin: 40px 0 4px; }
+    h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+    .updated { color: var(--muted); margin: 0 0 16px; }
+    a { color: var(--link); }
+    code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; font-size: .92em; overflow-wrap: anywhere; }
+    ul { padding-left: 1.2em; }
+    li { margin: 4px 0; }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 48px 0 0; }
+    footer { color: var(--muted); font-size: .9rem; margin-top: 48px; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for TheAutomationLayerAI Upload Service</h1>
-  <p><strong>Last updated:</strong> 26 June 2026</p>
+<main>
+  <header class="site">
+    <strong>The Automation Layer</strong>
+    <p>YouTube: <a href="https://www.youtube.com/@TheAutomationLayerAI">@TheAutomationLayerAI</a></p>
+    <nav><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Service</a></nav>
+  </header>
 
-  <h2>1. Overview</h2>
-  <p>We operate an automated video upload service that can upload videos to your YouTube channel on your behalf when you authorize our application. This policy explains what data we access, how we use it, and how you can revoke access.</p>
+  <section id="privacy">
+    <h1>Privacy Policy</h1>
+    <p class="updated"><strong>Last updated:</strong> 1 October 2026</p>
 
-  <h2>2. Data We Access</h2>
-  <p>When you authorize our application we request permission to upload videos to your YouTube channel (scope: <code>youtube.upload</code>). We do not access or store your Google password. We store OAuth tokens (access and refresh tokens) securely to perform scheduled uploads.</p>
+    <h2>1. Who we are</h2>
+    <p>The Automation Layer ("we", "us") operates an automated publishing service that uploads and manages videos on YouTube channels whose owners have authorised it. The service is operated from the United Kingdom. This policy explains what data we access, why, how long we keep it and how you can remove it.</p>
 
-  <h2>3. How Tokens Are Stored and Used</h2>
-  <p>OAuth tokens are encrypted at rest and stored only for the purpose of uploading videos and refreshing access. Tokens are rotated and refreshed automatically. We do not share tokens with third parties.</p>
+    <h2>2. Use of YouTube API Services</h2>
+    <p>This service uses <strong>YouTube API Services</strong>. By using it you also agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-  <h2>4. Revoking Access</h2>
-  <p>You can revoke our access at any time from your Google Account → Security → Third‑party apps with account access. You can also request token revocation by contacting support at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
+    <h2>3. Data we access</h2>
+    <p>When you authorise the service with your Google account, we request only the permissions needed to run it:</p>
+    <ul>
+      <li><strong>Upload and manage videos</strong>: to upload videos, set titles, descriptions, thumbnails and publish status, and to mark altered or synthetic content.</li>
+      <li><strong>Read channel information</strong>: channel and video statistics (for example subscriber, view and upload counts) and channel standing, used to pace uploads safely.</li>
+      <li><strong>Read YouTube Analytics</strong>: aggregate performance metrics for videos the service published, used to choose future topics.</li>
+    </ul>
+    <p>We never see or store your Google password. We do not access your contacts, email, viewing history or any data unrelated to the authorised channel.</p>
 
-  <h2>5. Content and Copyright</h2>
-  <p>You are responsible for ensuring you have the rights to any voice, likeness, or media you ask us to upload. If you request voice cloning or human likenesses, you must provide written consent from the person(s) involved.</p>
+    <h2>4. How we use the data</h2>
+    <ul>
+      <li>To upload and publish videos you have approved.</li>
+      <li>To check channel health before uploading, so we do not upload while a channel has a problem.</li>
+      <li>To measure which videos perform well and plan future content for the same channel.</li>
+    </ul>
+    <p>Our use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not sell Google user data, use it for advertising, or use it to train general-purpose AI models.</p>
 
-  <h2>6. Contact</h2>
-  <p>For questions or to request deletion of stored tokens, email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <h2>5. Storage and security</h2>
+    <p>OAuth access and refresh tokens are held in an encrypted credential store on our server and are used only by the publishing service. Access to the server is restricted to the operator. Tokens are refreshed automatically and are never shared with third parties.</p>
+
+    <h2>6. Retention and deletion</h2>
+    <ul>
+      <li>OAuth tokens are kept until you revoke access or ask us to delete them, and are deleted within 7 days of that request.</li>
+      <li>Channel statistics and analytics we store are refreshed regularly and kept for no longer than 90 days, unless kept in aggregate form that does not identify a channel.</li>
+      <li>You can ask us to delete all stored data relating to your channel at any time using the contact below.</li>
+    </ul>
+
+    <h2>7. Revoking access</h2>
+    <p>You can revoke the service's access at any time from your Google Account's <a href="https://myaccount.google.com/connections">third-party connections page</a> (also reachable from <a href="https://security.google.com/settings/security/permissions">Google security settings</a>). Revoking access stops all uploads immediately.</p>
+
+    <h2>8. Sharing</h2>
+    <p>We do not share Google user data with third parties, except where required by law or to protect against fraud or abuse. Videos and their metadata are, by design, published to YouTube at your direction.</p>
+
+    <h2>9. Cookies</h2>
+    <p>This website does not set cookies or use tracking or analytics scripts.</p>
+
+    <h2>10. Your rights</h2>
+    <p>Under UK data protection law you can ask to access, correct or delete your personal data, or object to how we use it. If you are unhappy with our response you can complain to the <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office</a>.</p>
+
+    <h2>11. Changes</h2>
+    <p>If we change this policy we will update the date at the top of this page. Material changes affecting how Google user data is used will be notified before they take effect.</p>
+
+    <h2>12. Contact</h2>
+    <p>For questions, data requests or token deletion: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+  </section>
 
   <hr>
 
-  <h1>Terms of Service for TheAutomationLayerAI Upload Service</h1>
-  <p><strong>Last updated:</strong> 26 June 2026</p>
+  <section id="terms">
+    <h1>Terms of Service</h1>
+    <p class="updated"><strong>Last updated:</strong> 1 October 2026</p>
 
-  <h2>1. Acceptance</h2>
-  <p>By authorizing TheAutomationLayerAI Upload Service to access your YouTube account, you agree to these Terms.</p>
+    <h2>1. Acceptance</h2>
+    <p>By authorising The Automation Layer to access your YouTube account you agree to these Terms and to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
 
-  <h2>2. Service Description</h2>
-  <p>We provide automated video upload and scheduling services using OAuth authorization. You retain ownership of your channel and content.</p>
+    <h2>2. The service</h2>
+    <p>We provide automated video production support, upload, scheduling and performance reporting through YouTube API Services. You keep full ownership of your channel and your content.</p>
 
-  <h2>3. User Responsibilities</h2>
-  <p>You must have rights to all content uploaded, including voice clones and likenesses. You agree to indemnify us for any copyright or rights violations.</p>
+    <h2>3. Your responsibilities</h2>
+    <ul>
+      <li>You must have the rights to all content uploaded, including music, footage, voices and likenesses.</li>
+      <li>Where a voice or likeness of a real person is generated or cloned, you must hold that person's written consent.</li>
+      <li>Content must comply with YouTube's Community Guidelines and policies, including disclosure of altered or synthetic content.</li>
+    </ul>
 
-  <h2>4. Termination</h2>
-  <p>We may suspend or terminate service for abuse or policy violations. You may revoke our access at any time via your Google Account.</p>
+    <h2>4. AI-generated content</h2>
+    <p>The service uses AI tools in producing scripts, narration and visuals. Uploaded videos are labelled as containing altered or synthetic content where YouTube's policies require it.</p>
 
-  <h2>5. Contact</h2>
-  <p><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <h2>5. Availability</h2>
+    <p>The service is provided "as is". We aim for reliable operation but do not guarantee uninterrupted availability, and we are not liable for actions YouTube takes on a channel.</p>
+
+    <h2>6. Suspension and termination</h2>
+    <p>We may suspend the service for abuse or policy violations. You may stop using it at any time by revoking access from your Google Account; stored tokens are then deleted as described in the Privacy Policy.</p>
+
+    <h2>7. Governing law</h2>
+    <p>These Terms are governed by the laws of England and Wales.</p>
+
+    <h2>8. Contact</h2>
+    <p><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+  </section>
+
+  <footer>© 2026 The Automation Layer</footer>
+</main>
 </body>
 </html>
-
